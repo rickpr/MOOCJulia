@@ -13,7 +13,7 @@ alldata=readtable(ARGS[1])
 
 css=String[]
 for assets=readdir("./css")
-  push!(css,string("<style type=\"text/css\">",readall(string("./css/",assets)),"</style>"))
+  push!(css,string("<style type=\"text/css\">\n",readall(string("./css/",assets)),"</style>"))
 end
 
 params="xparam","yparam","cparam"
