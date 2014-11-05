@@ -21,7 +21,7 @@ body=""
 for param=params
   body=string(body,"<td>\n<select id=\"$param\">")
   for helo=alldata
-    body=string(body,"<option value=\"$(helo[1])\">$(illume(helo[1]))</option>\n")
+    body=string(body,"<option value=\"$(string(helo[1]))\">$(illume(string(helo[1])))</option>\n")
   end
   body=string(body,"</select>\n</td>")
 end
